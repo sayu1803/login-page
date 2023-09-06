@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #logo {
+            width: 250px;
+            height: 250px; /* Set the height to match the width for a circular shape */
+            border-radius: 50%; /* Make the logo circular */
+            object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+        }
+        .input-container {
+            margin: 10px 0;
+        }
+        label{
+            padding-right: 500px;
+
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 550px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-button {
+            background-color: #00a537;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            width:570px ;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .remember-me {
+            padding-left: 50px;
+        }
+        .forgot-password-box {
+            background-color: #f0f0f0; /* Light grey background color */
+            padding: 10px;
+            border-radius: 5px;
+            width: 550px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .cancel-button {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .forgot-password-link{
+            padding-left: 320px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="logo.jpg" alt="Logo">
+        <div class="input-container">
+            <label for="username">Username</label>
+            <br>
+            <input type="text" placeholder="Enter Username">
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <br>
+            <input type="password" placeholder="Enter Password">
+        </div>
+        <button class="login-button">Login</button>
+        <div class="remember-me">
+            <input type="checkbox" id="remember"> <label for="remember">Remember Me</label>
+        </div>
+        
+        <div class="forgot-password-box">
+            <button class="cancel-button">Cancel</button>
+            <p class="forgot-password-link"><a href="#">Forgot Password?</a></p>
+        </div>
+    </div>
+</body>
+</html>
